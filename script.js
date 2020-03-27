@@ -9,11 +9,15 @@ function enterSite() {
     $('#full-site').css('max-height', 'auto')
     $('#register-side-bar').css('transform', 'translate(0)')
 }
+$('#visible-section').mouseenter(() => { openForm(); })
+$('#empty-section').mouseenter(() => { closeForm() })
+$('#form-section').mouseleave(() => { closeForm() })
+
 
 
 function openForm() {
-    $('#register-side-bar').css('transform', 'translate(-650px)')
-    $('#register-side-bar').css('transition-delay', '0')
+    $('#register-side-bar').css('transform', 'translate(-538px)')
+    $('#register-side-bar').css('transition-delay', '0s')
     $('#register-side-bar').css('z-index', '100')
 
     $('#call-num').css('opacity', '0')

@@ -1,7 +1,7 @@
 @import 'functions.scss';
 $faint-white: rgba(255, 255, 255, .38);
-$visible-width: 6%;
-$empty-width: 100 - $visible-width;
+$visible-width: 4%;
+$empty-width: 100% - $visible-width;
 $form-width: 70%;
 $bg-color: rgba(227, 227, 227, .08);
 #dimmed-bg {
@@ -30,7 +30,7 @@ $bg-color: rgba(227, 227, 227, .08);
     position: relative;
     z-index: 12;
     color: white;
-    padding-left: 92px;
+    padding-left: 82px;
     padding-top: 62px;
     box-sizing: border-box;
     width: $empty-width;
@@ -42,10 +42,10 @@ $bg-color: rgba(227, 227, 227, .08);
         display: inline-block;
         border-bottom: 1px solid $faint-white;
         padding-bottom: pex-to-rem(18px);
-        padding-right: pex-to-rem(72px);
+        padding-right: pex-to-rem(10px);
         li {
             display: inline-block;
-            padding: 0 pex-to-rem(30px);
+            padding: 0 pex-to-rem(10px);
         }
         li:first-child {
             padding-left: 0;
@@ -58,13 +58,13 @@ $bg-color: rgba(227, 227, 227, .08);
         }
     }
     article {
-        margin-top: pex-to-rem(204px);
+        margin-top: pex-to-rem(104px);
         h1 {
-            font-size: pex-to-rem(36px);
+            font-size: pex-to-rem(26px);
         }
         p {
             margin: pex-to-rem(48px) 0;
-            width: pex-to-rem(640px);
+            width: pex-to-rem(340px);
             line-height: 200%;
         }
         button {
@@ -87,7 +87,7 @@ $bg-color: rgba(227, 227, 227, .08);
     display: flex;
     position: absolute;
     transition: all $side-bar-trans-time $side-bar-trans-delay;
-    transform: translateX(200px);
+    transform: translateX(100px);
     #empty-section {
         width: $empty-width;
         height: 100vh;
