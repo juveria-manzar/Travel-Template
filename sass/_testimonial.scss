@@ -3,7 +3,7 @@
     background-color: $bg-color;
     margin: pex-to-rem(200px) 0;
     position: relative;
-    padding: 400px 0;
+    // padding: 400px 0;
     &::before,
     &::after {
         content: "";
@@ -30,5 +30,85 @@
         bottom: 0;
         right: 0;
         background-color: white;
+    }
+    article {
+        $color: #0d77bb;
+        $alt-color: #184a6a;
+        position: relative;
+        z-index: 20;
+        padding: pex-to-rem(108px) pex-to-rem(76px);
+        text-align: center;
+        h2 {
+            text-transform: uppercase;
+            font-size: pex-to-rem(36px);
+            margin-bottom: pex-to-rem(24px);
+        }
+        h5 {
+            font-size: pex-to-rem(24px);
+            span {
+                font-size: pex-to-rem(36px);
+                color: $color;
+            }
+        }
+        #reviews {
+            display: flex;
+            color: white;
+            margin: pex-to-rem(32px) pex-to-rem(24px);
+            .review {
+                background-color: $color;
+                margin: 0 pex-to-rem(18px);
+                padding: pex-to-rem(24px);
+                .reviewer-details {
+                    display: flex;
+                    align-items: center;
+                    figure {
+                        border-radius: 50px;
+                        background-size: cover;
+                        height: pex-to-rem(100px);
+                        width: pex-to-rem(100px);
+                    }
+                    .details {
+                        margin-left: pex-to-rem(18px);
+                        letter-spacing: 1px;
+                        .name {
+                            // font-size: pex-to-rem(18px);
+                            text-transform: uppercase;
+                            margin-bottom: pex-to-rem(6px);
+                        }
+                        .from {
+                            font-size: pex-to-rem(14px);
+                            text-align: left;
+                        }
+                    }
+                }
+                .review-text {
+                    font-size: pex-to-rem(16px);
+                    margin-top: pex-to-rem(14px);
+                    text-align: left;
+                    line-height: 140%;
+                }
+            }
+            .review:nth-of-type(1) figure {
+                background-image: url(get-image('face-1.jpg'));
+            }
+            .review:nth-of-type(2) figure {
+                background-image: url(get-image('face-2.jpg'));
+            }
+            .review:nth-of-type(3) figure {
+                background-image: url(get-image('face-3.jpg'));
+            }
+            .review:nth-of-type(2) {
+                background-color: $alt-color;
+            }
+        }
+        a {
+            display: block;
+            text-align: center;
+            color: $color;
+            margin-top: pex-to-rem(8px);
+            &:hover {
+                opacity: .7;
+            }
+        }
     }
 }
