@@ -145,6 +145,33 @@
     font-size: 4.5rem;
     margin-top: 0.75rem; }
 
+#footer {
+  color: white;
+  padding: 2.5rem 0;
+  background-color: rgba(13, 13, 13, 0.48);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  #footer h5 {
+    font-size: 1.875rem;
+    margin: 1.875rem 0; }
+  #footer hr {
+    width: 4%;
+    border: 1px solid rgba(255, 255, 255, 0.38);
+    border-top: none; }
+  #footer h6 {
+    font-size: 1rem;
+    margin: 0.5rem 0; }
+  #footer #social-icons {
+    padding: 0.75rem 0; }
+    #footer #social-icons img {
+      width: 2.25rem;
+      padding: 0 0.25rem;
+      transition: all .2s; }
+      #footer #social-icons img:hover {
+        transform: scale(1.2); }
+
 #info-section {
   color: #cfcfcf;
   margin: 5.125rem; }
@@ -412,7 +439,7 @@ input {
     padding: 2.625rem;
     padding-left: 21.25rem;
     padding-right: 10rem;
-    margin-bottom: 0.625rem; }
+    margin-bottom: 1.875rem; }
   #weekly-deal #deal {
     display: flex;
     align-items: center;
