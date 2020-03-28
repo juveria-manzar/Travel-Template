@@ -401,3 +401,41 @@ input {
       margin-top: 0.5rem; }
       #testimonials article a:hover {
         opacity: .7; }
+
+#weekly-deal {
+  margin: 7.5rem 0;
+  color: white; }
+  #weekly-deal h2 {
+    background-color: rgba(13, 13, 13, 0.52);
+    font-size: 2.25rem;
+    width: max-content;
+    padding: 2.625rem;
+    padding-left: 21.25rem;
+    padding-right: 10rem;
+    margin-bottom: 0.625rem; }
+  #weekly-deal #deal {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; }
+    #weekly-deal #deal .deal-details {
+      width: 30%;
+      padding-left: 11.25rem; }
+      #weekly-deal #deal .deal-details h3 {
+        font-size: 2.25rem; }
+      #weekly-deal #deal .deal-details p {
+        font-size: 1rem;
+        line-height: 180%;
+        margin: 1.25rem 0 2rem; }
+      #weekly-deal #deal .deal-details a {
+        text-decoration: underline; }
+        #weekly-deal #deal .deal-details a:hover {
+          opacity: .6; }
+    #weekly-deal #deal figure {
+      background-image: url("../images/greece.jpg");
+      background-size: cover;
+      height: 576px;
+      width: 44%;
+      box-shadow: -4px 4px 14px 3px rgba(80, 80, 80, 0.44);
+      transition: all .5s; }
+      #weekly-deal #deal figure:hover {
+        transform: scale(1.06); }
