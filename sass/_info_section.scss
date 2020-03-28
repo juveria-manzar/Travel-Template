@@ -16,17 +16,30 @@
         &:hover {
             transform: scale(1.04);
         }
+        div {
+            margin-left: pex-to-rem(82px);
+            h2 {
+                font-size: pex-to-rem(30px);
+                margin-bottom: pex-to-rem(8px);
+            }
+            p {
+                font-size: pex-to-rem(16px);
+                width: 70%;
+                line-height: 200%;
+            }
+        }
     }
-    div {
-        margin-left: pex-to-rem(82px);
-        h2 {
-            font-size: pex-to-rem(30px);
-            margin-bottom: pex-to-rem(8px);
-        }
-        p {
-            font-size: pex-to-rem(16px);
-            width: 70%;
-            line-height: 200%;
-        }
+    article:nth-of-type(1) figure {
+        background-image: url(get-image('info-1.jpg'));
+    }
+    article:nth-of-type(2) figure {
+        background-image: url(get-image('info-2.jpg'));
+    }
+    article:nth-of-type(3) figure {
+        background-image: url(get-image('info-3.jpg'));
+    }
+    article:nth-of-type(2) {
+        position: relative;
+        left: 60px;
     }
 }
