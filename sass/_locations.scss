@@ -1,0 +1,51 @@
+#locations {
+    margin: pex-to-rem(120px) 0;
+    text-align: center;
+    color: white;
+    h2 {
+        font-size: pex-to-rem(36px);
+        text-transform: uppercase;
+    }
+    #header-link {
+        font-size: pex-to-rem(28px);
+        display: block;
+        color: #8a8a8a;
+        text-decoration: underline;
+        margin: pex-to-rem(8px) 0 pex-to-rem(22px);
+        &:hover {
+            opacity: .7;
+        }
+    }
+    input {
+        background-color: transparent;
+        width: pex-to-rem(300px);
+        padding: 0 pex-to-rem(18px) pex-to-rem(10px);
+        display: block;
+        text-align: center;
+        margin: pex-to-rem(72px) auto;
+        border-bottom: 1px solid $faint-white;
+    }
+     ::placeholder {
+        color: #d3d3d3;
+    }
+    h4 {
+        font-size: pex-to-rem(24px);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: pex-to-rem(18px) auto;
+    }
+    li {
+        color: rgba(255, 255, 255, .7);
+        font-size: pex-to-rem(18px);
+        list-style: none;
+        padding: pex-to-rem(18px) pex-to-rem(58px);
+    }
+    a {
+        cursor: pointer;
+    }
+}
